@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sanomalib"
+version = "0.1.0"
+description = "Sound Anomaly Detection Library in Python"
+authors = [
+  { name = "Ryohei Yamaguchi", email = "yamaguchi.ryohei.work@gmail.com" },
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.urls]
+"Homepage" = "https://github.com/your-account/sanomalib"
+"Repository" = "https://github.com/your-account/sanomalib"
+
+[project.dependencies]
+numpy = ">=1.20"
+librosa = ">=0.8"
+scikit-learn = ">=1.0"
+torch = ">=1.10"
+pytorch-lightning = ">=1.6"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sanomalib", "sanomalib.*"]
